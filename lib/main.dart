@@ -11,8 +11,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(),
-      
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('App title'),
+        ),
+        body: const Text('hello'),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const[
+            BottomNavigationBarItem(
+              label: 'Home',
+              icon: Icon(Icons.home)
+              ),
+              BottomNavigationBarItem(
+              label: 'Settings',
+              icon: Icon(Icons.settings)
+              )
+          ],
+        ),
+      ),
     );
   }
 }
