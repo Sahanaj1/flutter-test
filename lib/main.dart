@@ -52,7 +52,7 @@ class _MyAppState extends State<MyApp> {
                   child: Text(buttonName)),
                       ],
                     ),
-            ) : Image.network('https://i.natgeofe.com/n/63527567-9a8b-4b08-819d-a6142fb2b350/aurora-kirkjufell-iceland_3x4.jpg')
+            ) : Image.asset('images/aurora1.jpeg')
             ),
         bottomNavigationBar: BottomNavigationBar(
           items: const [
