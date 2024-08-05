@@ -11,16 +11,21 @@ class MyUser {
     required this.email,
     required this.name,
     required this.hasActiveCart,
-  })
+  });
 
-  static final empty= MyUser(userId: '', email: '', name: '', hasActiveCart: false);
+  static final empty = MyUser(
+		userId: '', 
+		email: '', 
+		name: '',
+    hasActiveCart: false,
+	);
 
-  MyUserEntity toEntity(){
+  MyUserEntity toEntity() {
     return MyUserEntity(
       userId: userId, 
       email: email, 
-      name: name, 
-      hasActiveCart: hasActiveCart
+      name: name,
+      hasActiveCart: hasActiveCart,
     );
   }
 
@@ -35,7 +40,6 @@ class MyUser {
 
   @override
   String toString() {
-    // TODO: implement toString
-    return 'MyUser: $email $name $userId $hasActiveCart';
+    return 'MyUser: $userId, $email, $name, $hasActiveCart';
   }
 }

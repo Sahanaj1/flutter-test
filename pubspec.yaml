@@ -1,4 +1,4 @@
-name: pizza_app
+name: test_flutter
 description: "A new Flutter project."
 publish_to: 'none'
 version: 0.1.0
@@ -32,4 +32,4 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/
+    - images/
